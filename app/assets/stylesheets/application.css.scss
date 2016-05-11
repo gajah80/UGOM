@@ -1,0 +1,20 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "*";
+
+.container-fluid{
+    padding: 0px;
+}
+.top-padding{
+    margin-top: 50px;
+}
+.flash{
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+}

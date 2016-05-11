@@ -1,0 +1,12 @@
+<%= form_tag voters_path, method: :get  do %>
+  <%= text_field_tag :search %>
+  <%= submit_tag "Search" %>
+<% end -%>
+
+<% @voters.each do |v| %>
+<%= v.nama %> <br>
+<% end %>
+
+<% if @flash %>
+	<%= @flash %>
+<% end %>

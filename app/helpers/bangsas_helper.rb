@@ -1,0 +1,2 @@
+module BangsasHelper
+end

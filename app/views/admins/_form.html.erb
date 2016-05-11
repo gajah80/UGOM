@@ -1,0 +1,13 @@
+<div class="col-md-5">
+    <%= simple_form_for(@admin) do |f| %>
+        <%= f.input :username, error: "Username perlu diisi" %>
+        <%= f.input :email %>
+        <%= f.association :role, prompt: "--- Pilih role ---" %>
+        <%= f.association :branch, prompt: "--- Pilih cawangan ---", label: "Cawangan" %>
+        <small>Tiada cawangan? <%= link_to "Daftar cawangan baru", new_branch_path  %></small>
+        <br />
+        <br />
+        <%= f.input :password, as: :password, error: "Ruangan password perlu diisi" %>
+        <%= f.submit "Simpan", class: "btn btn-default" %>
+    <% end %>
+</div>
